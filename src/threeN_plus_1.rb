@@ -27,7 +27,7 @@ class Range
 
     # RubyProf.start
     max_cycle_length = 0
-    prof_start = Time.new
+    # prof_start = Time.new
     range.each do |n|
       num = n
       count = 0
@@ -51,11 +51,11 @@ class Range
     # result = RubyProf.stop
     # printer = RubyProf::FlatPrinter.new(result)
     # printer.print(STDOUT)
-    prof_end = Time.new
-    puts "Time taken - #{prof_end - prof_start}"
+    # prof_end = Time.new
+    # puts "Time taken - #{prof_end - prof_start}"
     return max_cycle_length
   end
 end
 
-puts (1..999999).max_cycle_length
+# puts (1..999999).max_cycle_length
 # puts (999999..1).max_cycle_length
